@@ -8,28 +8,16 @@ Most Recent Revision: Jan 10th, 2020
 <html>
   <head>
     <title>Contact Page</title>
-
-    <style>
-        body{
-            text-align: center;
-            padding: 5px;
-        }
-        form{
-            padding: 5px;
-           
-        }
-        textarea{
-            vertical-align: top;
-        }
     
-        </style>      
-      </head>
+    <link rel="stylessheet" type="text/css" href="restaurantStyles.css">
+
+ </head>
 
     <body>
         <div id="header">
             <header>
               <h1>Chu Chu's Pizzaria</h1>
-            <header/>
+            </header>
         </div>
 
             <hr/>
@@ -46,30 +34,30 @@ Most Recent Revision: Jan 10th, 2020
 
         <div id="form" class="container">    
             <form action="http://localhost:3000/" method="post">
-                <label id="name">Name:</label> 
+                <label id="input">Name:</label> 
                     <input type="text" name="name" required/>
                         <br>
-                <label id="email1">Email:</label>
+                <label id="input">Email:</label>
                     <input type="text" name="email" required />
                         <br>
-                <lable id="phone1">Phone:</lable>
+                <lable id="input">Phone:</lable>
                     <input type="text" name="phone" required />    
                        <br>    
-                <lable id="dropdown1">Reason for Inquiry:</lable>
+                <lable id="input">Reason for Inquiry:</lable>
                     <select  name="reasons">
                         <option value="Catering">Catering</option>
                         <option value="Complaint">Complaint</option>
                         <option value="Compliment">Compliment</option>
                     </select> 
                         <br/>
-                <lable id="textarea1">Additional Comments</lable>
+                <lable id="input">Additional Comments</lable>
                     <textarea name = "additionalcomments"></textarea>
                         <br/>
-                <label id="radiobutton1">Have You been to the restaurant?:</label> 
+                <label id="input">Have You been to the restaurant?:</label> 
                     <input type="radio" name="answer" value="Yes">Yes
                     <input type="radio" name="answer" value="No">No
                         <br/>
-                <label id="checkbox1">Best day(s) to contact you:</label>
+                <label id="input">Best day(s) to contact you:</label>
                     <input type="checkbox" name="M" value="M"> M
                     <input type="checkbox" name="T" value="T"> T
                     <input type="checkbox" name="W" value="W"> W
@@ -78,7 +66,7 @@ Most Recent Revision: Jan 10th, 2020
                 
                      <br><br>
 
-                <label id="submitreset"></label>
+                <label id="input"></label>
                     <input type="submit" />
                     <input type="reset"/>
              </form>
